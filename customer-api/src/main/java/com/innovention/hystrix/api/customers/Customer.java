@@ -7,7 +7,6 @@ public class Customer {
 	String name;
 	String surename;
 	List<Integer> policyIds;
-	String commercialType;
 	
 	public String getAccountId() {
 		return accountId;
@@ -32,11 +31,5 @@ public class Customer {
 	}
 	public void setPolicyId(List<Integer> policyIds) {
 		this.policyIds = policyIds;
-	}
-	public String getCommercialType() {
-		return commercialType;
-	}
-	public void setCommercialType(String commercialType) {
-		this.commercialType = commercialType;
 	}
 }
