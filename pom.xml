@@ -21,6 +21,7 @@
 
 	<modules>
 		<module>customer-api</module>
+		<module>client-api</module>
 	</modules>
 
 	<build>
