@@ -20,6 +20,7 @@
 
 
 	<modules>
+		<module>beans</module>
 		<module>customer-api</module>
 		<module>client-api</module>
 	</modules>
@@ -27,21 +28,14 @@
 	<dependencyManagement>
 		<dependencies>
 			<dependency>
-				<groupId>com.innovention.netflix</groupId>
-				<artifactId>customer-api</artifactId>
-				<version>0.0.1-SNAPSHOT</version>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-dependencies</artifactId>
+				<version>Brixton.SR5</version>
+				<type>pom</type>
+				<scope>import</scope>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
-
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-			</plugin>
-		</plugins>
-	</build>
 
 	<repositories>
 		<repository>

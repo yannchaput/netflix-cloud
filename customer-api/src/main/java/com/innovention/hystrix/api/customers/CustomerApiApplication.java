@@ -13,6 +13,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.innovention.hystrix.api.beans.Customer;
+
 @RestController
 @SpringBootApplication
 @RequestMapping(value="/api")
@@ -34,29 +36,29 @@ public class CustomerApiApplication {
 	HashMap<String,Customer> customers() {
 		HashMap<String,Customer> map = new HashMap<>();
 		Customer cust = new Customer();
-		cust.accountId = "default";
-		cust.name="default";
-		cust.surename="default";
-		cust.policyIds = Arrays.asList(1516515,41411961);
-		map.put(cust.accountId, cust);
+		cust.setAccountId("default");
+		cust.setName("default");
+		cust.setSurename("default");
+		cust.setPolicyId(Arrays.asList(1516515,41411961));
+		map.put(cust.getAccountId(), cust);
 		cust = new Customer();
-		cust.accountId = "test1";
-		cust.name="Yann";
-		cust.surename="Chaput";
-		cust.policyIds = Arrays.asList(1516515,41411961);
-		map.put(cust.accountId, cust);
+		cust.setAccountId("test1");
+		cust.setName("Yann");
+		cust.setSurename("Chaput");
+		cust.setPolicyId(Arrays.asList(1516515,41411961));
+		map.put(cust.getAccountId(), cust);
 		cust = new Customer();
-		cust.accountId = "test2";
-		cust.name="Damien";
-		cust.surename="Brenas";
-		cust.policyIds = Arrays.asList(1516515,41411961);
-		map.put(cust.accountId, cust);
+		cust.setAccountId("test2");
+		cust.setName("Damien");
+		cust.setSurename("Brenas");
+		cust.setPolicyId(Arrays.asList(1516515,41411961));
+		map.put(cust.getAccountId(), cust);
 		cust = new Customer();
-		cust.accountId = "test3";
-		cust.name="Fabrice";
-		cust.surename="Gueant";
-		cust.policyIds = Arrays.asList(1516515,41411961);
-		map.put(cust.accountId, cust);
+		cust.setAccountId("test3");
+		cust.setName("Fabrice");
+		cust.setSurename("Gueant");
+		cust.setPolicyId(Arrays.asList(1516515,41411961));
+		map.put(cust.getAccountId(), cust);
 		
 		return map;
 	}
